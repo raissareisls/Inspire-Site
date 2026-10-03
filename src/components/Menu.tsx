@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Menu() {
   return (
-    <nav className="w-full bg-[#2A2438] text-white px-8 py-4 flex items-center justify-between font-sans shadow-md">
+    <nav className="w-full bg-[#272e3fd1] text-white px-8 py-4 flex items-center justify-between font-sans shadow-md">
       {/* Lado Esquerdo: Logo no círculo rosa e Título */}
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden">

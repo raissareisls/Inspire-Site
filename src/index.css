@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e8719a33 transparent;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+  background-color: #343c50;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at 82% 12%, rgba(232, 113, 154, 0.08), transparent 28rem);
+  background-size: 48px 48px, 48px 48px, auto;
+  background-attachment: fixed;
+  color: #f0f2f8;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.glass-panel {
+  background: rgba(42, 49, 67, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(10, 14, 25, 0.16);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.glass-card {
+  background: rgba(65, 75, 99, 0.46);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px rgba(12, 17, 29, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-field {
+  background: rgba(31, 38, 54, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-field:focus {
+  border-color: rgba(232, 113, 154, 0.7);
+  box-shadow: 0 0 0 3px rgba(232, 113, 154, 0.1);
+}
+
+::selection {
+  background: #e8719a44;
+}
