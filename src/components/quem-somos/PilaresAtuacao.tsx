@@ -31,7 +31,7 @@ export default function PilaresAtuacao() {
             {
               icon: "03",
               title: "Empregabilidade",
-              desc: "Preparação real para o mercado: portfólio, entrevistas e vagas.",
+              desc: "Apresentar e adquirir conhecimento sobre o mercado de tecnolgoia atual.",
             },
             {
               icon: "04",

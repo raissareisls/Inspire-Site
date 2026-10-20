@@ -1,7 +1,17 @@
+import ProgramaDeMentoria from "../components/mentorias/ProgramaDeMentoria";
+import ComoFunciona from "../components/mentorias/ComoFunciona";
+import BeneficiosMentoria from "../components/mentorias/BeneficiosMentoria";
+import NossoTime from "../components/mentorias/NossoTime";
+import InscricaoMentoria from "../components/mentorias/InscricaoMentoria";
+
 export default function Mentoria() {
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-3xl font-bold text-blue-600">Página de Mentoria INSPIRE</h1>
-    </div>
+    <main className="text-white">
+      <ProgramaDeMentoria />
+      <ComoFunciona />
+      <BeneficiosMentoria />
+      <NossoTime />
+      <InscricaoMentoria />
+    </main>
   );
 }

@@ -1,3 +1,5 @@
+import meninasInspire from "../../assets/meninasInspire.jpeg"
+
 export default function NossaHistoria() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
@@ -14,7 +16,7 @@ export default function NossaHistoria() {
         </h1>
 
         <p className="text-base leading-relaxed mb-4 text-[#b8c0d8]">
-          O INSPIRE surgiu em 2020, dentro da Universidade Federal do Ceará,
+          O INSPIRE surgiu em 2024, dentro da Universidade Federal do Ceará,
           diante de um dado preocupante: mulheres representam menos de 20% dos
           profissionais de tecnologia no Brasil.
         </p>
@@ -30,7 +32,7 @@ export default function NossaHistoria() {
       {/* Imagem representando mulheres na tecnologia */}
       <div className="h-[360px] rounded-2xl overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=700&h=500&fit=crop&auto=format"
+          src={meninasInspire}
           alt="Mulheres em evento de tecnologia"
           className="w-full h-full object-cover"
         />
