@@ -1,7 +1,15 @@
+import NossaHistoria from "../components/quem-somos/NossaHistoria";
+import PilaresAtuacao from "../components/quem-somos/PilaresAtuacao";
+import LinhaDoTempo from "../components/quem-somos/LinhaDoTempo";
+import Equipe from "../components/quem-somos/Equipe";
+
 export default function QuemSomos() {
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-3xl font-bold text-blue-600">Página de Quem Somos INSPIRE</h1>
-    </div>
+    <main className="text-white">
+      <NossaHistoria />
+      <PilaresAtuacao />
+      <LinhaDoTempo />
+      <Equipe />
+    </main>
   );
 }
