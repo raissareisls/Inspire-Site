@@ -2,79 +2,42 @@ import ufcLogo from "../../assets/ufc.png";
 import ifceLogo from "../../assets/ifce.png";
 import greatLogo from "../../assets/great.png";
 
-function Parceiros() {
-  const parceiros = [
-    {
-      nome: "Universidade Federal do Ceará",
-      sigla: "UFC",
-      logo: ufcLogo,
-    },
-    {
-      nome: "IFCE - Maracanaú",
-      sigla: "IFCE - Maracanaú",
-      logo: ifceLogo,
-    },
-    {
-      nome: "GREAT",
-      sigla: "GREAT",
-      logo: greatLogo,
-    },
-  ];
+const parceiros = [
+  { nome: "Universidade Federal do Ceará", sigla: "UFC", logo: ufcLogo },
+  { nome: "IFCE - Maracanaú", sigla: "IFCE - Maracanaú", logo: ifceLogo },
+  { nome: "GREAT", sigla: "GREAT", logo: greatLogo },
+];
 
+export default function Parceiros() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pb-20">
-      {/* Título da seção */}
-      <div className="text-center mb-10">
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#e8719a] mb-3">
+    <section className="mx-auto max-w-6xl px-6 pb-16 pt-2 md:pb-20">
+      <div className="mb-7 text-center">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#e8719a]">
           Nossos parceiros
         </p>
-
-        <h2 className="font-display text-2xl md:text-3xl font-bold text-white">
+        <h2 className="font-display text-2xl font-bold text-white md:text-3xl">
           Instituições que apoiam o <span className="text-[#e8719a]">INSPIRE</span>
         </h2>
-
-        <p className="max-w-2xl mx-auto mt-3 text-sm md:text-base text-[#9aa3be]">
-          Construímos nossa trajetória em parceria com instituições que
-          acreditam na transformação por meio da tecnologia e da educação.
+        <p className="mx-auto mt-3 max-w-2xl text-sm text-[#9aa3be] md:text-base">
+          Construímos nossa trajetória em parceria com instituições que acreditam na
+          transformação por meio da tecnologia e da educação.
         </p>
       </div>
 
-      {/* Faixa de instituições parceiras */}
-      <div
-        className="
-          glass-panel
-          rounded-2xl
-          px-6 py-4
-          flex flex-col sm:flex-row
-          items-center justify-center
-          divide-y sm:divide-y-0 sm:divide-x
-          divide-white/10
-        "
-      >
+      <div className="flex flex-col items-center justify-center divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/[0.045] px-6 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] md:flex-row md:divide-x md:divide-y-0">
         {parceiros.map((parceiro) => (
           <div
             key={parceiro.sigla}
-            className="
-              w-full sm:w-auto
-              flex items-center justify-center
-              gap-3
-              px-6 py-3
-              transition-opacity duration-300
-              hover:opacity-100
-              opacity-75
-            "
+            className="flex w-full items-center justify-center gap-3 px-6 py-3 opacity-85 transition-opacity duration-300 hover:opacity-100 md:w-auto"
           >
-            {/* Logo da instituição */}
-            <div className="w-10 h-10 flex items-center justify-center">
+            <div className="flex h-10 w-10 items-center justify-center">
               <img
                 src={parceiro.logo}
                 alt={`Logo ${parceiro.nome}`}
-                className="max-w-full max-h-full object-contain"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
-
-            {/* Sigla da instituição */}
-            <span className="text-sm font-semibold tracking-wide text-white whitespace-nowrap">
+            <span className="whitespace-nowrap text-sm font-semibold tracking-wide text-white">
               {parceiro.sigla}
             </span>
           </div>
@@ -83,5 +46,3 @@ function Parceiros() {
     </section>
   );
 }
-
-export default Parceiros;

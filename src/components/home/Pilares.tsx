@@ -19,7 +19,7 @@ export default function Pilares() {
       {/* Grid de Cartões */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Cartão 1 */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+        <div className="bg-white/10 border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-[#e8719a]/40 transition-colors">
           <span className="text-[#e8719a] font-bold text-xl mb-4 block">01</span>
           <h3 className="text-xl font-bold mb-3">Formação técnica</h3>
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">
@@ -31,7 +31,7 @@ export default function Pilares() {
         </div>
 
         {/* Cartão 2 */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+        <div className="bg-white/10 border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-[#e8719a]/40 transition-colors">
           <span className="text-[#e8719a] font-bold text-xl mb-4 block">02</span>
           <h3 className="text-xl font-bold mb-3">Mentorias individuais</h3>
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">
@@ -43,7 +43,7 @@ export default function Pilares() {
         </div>
 
         {/* Cartão 3 */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+        <div className="bg-white/10 border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-[#e8719a]/40 transition-colors">
           <span className="text-[#e8719a] font-bold text-xl mb-4 block">03</span>
           <h3 className="text-xl font-bold mb-3">Oportunidades reais</h3>
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">

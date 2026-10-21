@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+## Executar no Windows (PowerShell)
+
+Se o PowerShell bloquear `npm.ps1` por causa da política de execução de scripts, use o executável `.cmd` do npm:
+
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
+
+Isso não exige alterar a política de execução do Windows. Para os outros comandos do projeto, use também `npm.cmd` (por exemplo, `npm.cmd run build`).
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

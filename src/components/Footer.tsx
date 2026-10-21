@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#272e3fd1] text-white py-12 border-t border-[#e8719a]/20">
-      <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between gap-10">
+    <footer className="w-full bg-[#2A2438] text-white py-12 border-t border-[#e8719a]/20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 sm:grid-cols-2 md:px-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(150px,0.7fr)_minmax(230px,1fr)] lg:gap-16">
         
         {/* Coluna 1: Info do Projeto */}
         <div className="flex flex-col max-w-sm">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-8 h-8 bg-[#fefefe] rounded-full flex items-center justify-center overflow-hidden">
-              <img src="public\inspireAtivo 1@2x-Photoroom.png-Photoroom.png" alt="Logo INSPIRE" className="w-full h-full object-cover p-1" />
+              <img src="/inspireAtivo 1@2x-Photoroom.png-Photoroom.png" alt="Logo INSPIRE" className="w-full h-full object-cover p-1" />
             </div>
             <span className="text-xl font-bold tracking-wide">INSPIRE</span>
           </div>
