@@ -71,3 +71,14 @@ h1, h2, h3, h4, h5, h6 {
     radial-gradient(ellipse at 84% 44%, rgba(83, 101, 123, 0.14), transparent 40%);
   background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
 }
+
+/*Página de inscrições */
+.inscricao-page input:-webkit-autofill,
+.inscricao-page input:-webkit-autofill:hover,
+.inscricao-page input:-webkit-autofill:focus,
+.inscricao-page input:-webkit-autofill:active {
+  -webkit-text-fill-color: #f0f2f8;
+  caret-color: #f0f2f8;
+  -webkit-box-shadow: 0 0 0 1000px #1f2636 inset;
+  box-shadow: 0 0 0 1000px #1f2636 inset;
+}
