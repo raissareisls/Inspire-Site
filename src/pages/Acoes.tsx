@@ -1,7 +1,15 @@
+import { useState } from 'react';
+import AcoesHead from '../components/acoes/AcoesHead';
+import Filtro from '../components/acoes/Filtro'
+import ListaAcoes from '../components/acoes/ListaAcoes'
+
 export default function Acoes() {
+  const [filtro, setFiltro] = useState('Todas');
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-3xl font-bold text-blue-600">Página de Ações INSPIRE</h1>
-    </div>
+    <main className="w-full bg-[#2A2438] text-white min-h-screen">
+      <AcoesHead />
+      <Filtro ativo={filtro} onSelecionar={setFiltro}/>
+      <ListaAcoes filtro={filtro} />
+    </main>
   );
 }
