@@ -33,9 +33,9 @@ export default function Pilares() {
         {/* Cartão 2 */}
         <div className="bg-white/10 border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-[#e8719a]/40 transition-colors">
           <span className="text-[#e8719a] font-bold text-xl mb-4 block">02</span>
-          <h3 className="text-xl font-bold mb-3">Mentorias individuais</h3>
+          <h3 className="text-xl font-bold mb-3">Mentorias em grupo</h3>
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-            Conexões mensais com mentoras experientes do mercado para orientação de carreira, portfólio e entrevistas.
+            Encontros com mentoras e participantes para compartilhar experiências, trocar aprendizados e fortalecer trajetórias na tecnologia.
           </p>
           <Link to="/mentoria" className="text-[#e8719a] text-sm font-semibold hover:underline">
             Saiba mais →
@@ -45,12 +45,12 @@ export default function Pilares() {
         {/* Cartão 3 */}
         <div className="bg-white/10 border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-[#e8719a]/40 transition-colors">
           <span className="text-[#e8719a] font-bold text-xl mb-4 block">03</span>
-          <h3 className="text-xl font-bold mb-3">Oportunidades reais</h3>
+          <h3 className="text-xl font-bold mb-3">Networking e conexões</h3>
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-            Um mural de vagas de estágio e emprego curado para a comunidade INSPIRE, com suporte para aplicação.
+            Conecte-se com estudantes, profissionais e mentoras da comunidade INSPIRE, amplie sua rede e troque experiências.
           </p>
-          <Link to="/vagas" className="text-[#e8719a] text-sm font-semibold hover:underline">
-            Ver vagas →
+          <Link to="/quem-somos" className="text-[#e8719a] text-sm font-semibold hover:underline">
+            Conheça o INSPIRE →
           </Link>
         </div>
       </div>
